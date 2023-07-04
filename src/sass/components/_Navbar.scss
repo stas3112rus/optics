@@ -1,0 +1,106 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-green-2;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 70px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: $color-green-2;
+    left: -50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    overflow-block: hidden;
+    background-color: $color-green-2;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 0;
+    background-color: $color-green-dark-2;
+    z-index: 1;
+    transform: translateX(77%);
+    overflow-x: hidden;
+  }
+
+  &__Menu,
+  &__Search {
+    z-index: 3;
+  }
+
+  &__Menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 167px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__Search {
+    width: 60px;
+    background-color: $color-green-dark-2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  &__listItem {
+    padding: 0 28px;
+    border-right: 1px solid $color-black;
+
+    &_first {
+      padding-left: 0;
+    }
+
+    &_last {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+
+  &__listItemLink,
+  &__listItemLink:hover {
+    color: $color-white;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__SearchIcon{
+	cursor: pointer;
+  }
+}
