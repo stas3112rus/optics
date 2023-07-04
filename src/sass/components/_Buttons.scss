@@ -1,0 +1,15 @@
+.Buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 26px;
+  background-color: $color-white;
+  color: $color-black;
+  border: 1px solid var(--primary, $color-green-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  padding: 12px 30px;
+}

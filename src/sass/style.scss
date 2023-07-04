@@ -13,6 +13,11 @@
 
 .container {
   position: relative;
-  max-width: 1588px;
+  max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
+
+@import "components/Header";
+@import "components/Buttons";
+@import "components/Circles";

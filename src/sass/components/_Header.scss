@@ -1,0 +1,118 @@
+.Header {
+  min-width: 92px;
+  display: flex;
+  justify-content: space-between;
+
+  &__topBlock {
+    display: flex;
+    align-items: center;
+
+    &_first {
+      justify-content: left;
+      padding-left: 27px;
+    }
+
+    &_second {
+      width: 50%;
+      justify-content: space-between;
+    }
+  }
+
+  &__divider {
+    height: 100%;
+    width: 1px;
+    background-color: $color-gray-3;
+
+    &_first {
+      margin: 0 30px 0 13px;
+    }
+  }
+
+  &__locationTop {
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  &__locationBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__locationAddress {
+    color: $color-green-primary;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+
+    &_extra {
+      color: $color-gray-2;
+    }
+  }
+
+  &__locationAddressDivider {
+    min-height: 16px;
+    height: 100%;
+    width: 1px;
+    background-color: $color-gray-4;
+  }
+
+  &__CheckTableFirstRow,
+  &__CheckTableSecondRow {
+    color: $color-green-primary;
+  }
+
+  &__CheckTableFirstRow {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__CheckTableSecondRow {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__CheckTableText {
+    text-align: left;
+  }
+
+  &__phoneNumber a {
+    color: $color-black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__CallToActionLink,
+  &__CallToActionLink:hover {
+	display: inline-block;
+	padding-bottom: 3px;
+    color: $color-green-primary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-decoration: none;
+	border-bottom: 2px dotted $color-green-primary;
+  }
+
+  &__icons{
+	display: flex;
+	gap: 38px;
+  }
+
+  &__icon{
+	position: relative;
+	z-index: 1;
+  }
+
+  &__iconCount{
+	position: absolute;
+	top: -50%;
+	right: -50%;
+	z-index: 2;
+  }
+}
