@@ -1,0 +1,41 @@
+.MainBlock {
+  background-color: $color-gray-3;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: minmax(22px, auto) 1fr;
+    column-gap: 46px;
+  }
+
+  &__cover {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &__content {
+    margin-top: 30px;
+  }
+
+  &__texts {
+    margin-top: 60px;
+  }
+
+  &__text {
+    color: $color-gray-2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    &_extra {
+      color: $color-black;
+      font-style: italic;
+    }
+  }
+
+  &__button {
+    margin-top: 45px;
+  }
+}

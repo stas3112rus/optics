@@ -6,7 +6,6 @@
   overflow-x: hidden;
   min-height: 70px;
 
-
   &::before,
   &::after {
     content: "";
@@ -30,8 +29,6 @@
     transform: translateX(77%);
     background-color: $color-green-dark-2;
   }
-
-
 
   &__Menu,
   &__Search {

@@ -1,0 +1,11 @@
+.Title {
+  &__main {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+
+    & span {
+      color: $color-green-primary;
+    }
+  }
+}

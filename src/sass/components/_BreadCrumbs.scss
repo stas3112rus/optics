@@ -1,0 +1,14 @@
+.BreadCrumbs {
+  display: flex;
+  gap: 8px;
+  padding-top: 23px;
+
+  &__item {
+    color: $color-gray-2;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
