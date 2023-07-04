@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Nunito Sans 10pt SemiBold";
+  src: url("../fonts/Nunito Sans 10pt SemiBold.eot");
+  src: url("../fonts/Nunito Sans 10pt SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nunito Sans 10pt SemiBold.woff2") format("woff2"),
+    url("../fonts/Nunito Sans 10pt SemiBold.woff") format("woff"),
+    url("../fonts/Nunito Sans 10pt SemiBold.ttf") format("truetype"),
+    url("../fonts/Nunito Sans 10pt SemiBold.svg#../fonts/Nunito Sans 10pt SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/Nunito Sans 10pt Bold.eot");
+  src: url("../fonts/Nunito Sans 10pt Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nunito Sans 10pt Bold.woff2") format("woff2"),
+    url("../fonts/Nunito Sans 10pt Bold.woff") format("woff"),
+    url("../fonts/Nunito Sans 10pt Bold.ttf") format("truetype"),
+    url("../fonts/Nunito Sans 10pt Bold.svg#../fonts/Nunito Sans 10pt Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}
+
+@font-face {
+  font-family: "Nunito Sans 10pt";
+  src: url("../fonts/Nunito Sans 10pt Regular.eot");
+  src: url("../fonts/Nunito Sans 10pt Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Nunito Sans 10pt Regular.woff2") format("woff2"),
+    url("../fonts/Nunito Sans 10pt Regular.woff") format("woff"),
+    url("../fonts/Nunito Sans 10pt Regular.ttf") format("truetype"),
+    url("../fonts/Nunito Sans 10pt Regular.svg#../fonts/Nunito Sans 10pt Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044;
+}

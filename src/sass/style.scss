@@ -1,0 +1,18 @@
+@import "fonts";
+@import "libs/bootstrap-reboot.min";
+
+@import "variables/colors";
+
+* {
+  font-family: "Nunito Sans 10pt", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: $color-black;
+}
+
+.container {
+  position: relative;
+  max-width: 1588px;
+  margin: 0 auto;
+}
