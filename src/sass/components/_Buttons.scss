@@ -48,4 +48,12 @@
       color: $color-white;
     }
   }
+
+  &_success{
+     background: $color-black;
+  }
+
+  &_error{
+    background: $color-error;
+  }
 }
