@@ -1,0 +1,48 @@
+.Contact {
+  margin-top: 60px;
+  border: 1px solid $color-gray-4;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    width: 240px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__form {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__divider {
+    height: 100%;
+    min-height: 100px;
+    width: 1px;
+    background-color: $color-gray-3;
+  }
+
+  &__social {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__socialTitle {
+    width: 90px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  &__socialIcons{
+	display: flex;
+	gap: 15px;
+  }
+}

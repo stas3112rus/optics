@@ -18,9 +18,11 @@
   margin: 0 auto;
 }
 
-@import "components/Header";
+@import "components/inputs/InputText";
 @import "components/Buttons";
 @import "components/Circles";
+
+@import "components/Header";
 @import "components/Navbar";
 @import "components/Title";
 @import "components/BreadCrumbs";
@@ -29,3 +31,4 @@
 @import "components/Contents";
 @import "components/QuestionBlock";
 @import "components/FAQ";
+@import "components/Contact";

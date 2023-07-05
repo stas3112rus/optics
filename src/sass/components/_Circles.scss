@@ -19,6 +19,11 @@
     height: 50px;
   }
 
+  &_mediumGreat {
+    width: 60px;
+    height: 60px;
+  }
+
   &_small {
     width: 23px;
     height: 23px;
@@ -30,7 +35,12 @@
     background-color: $color-green-primary;
     color: $color-white;
   }
+
   &_white {
     background-color: $color-white;
+  }
+
+  &_gray{
+    background: $color-gray-3;
   }
 }
