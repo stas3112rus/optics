@@ -1,0 +1,46 @@
+.Advantages {
+  margin-top: 60px;
+
+  &__wrapper {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  &__Item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 190px;
+    border-radius: 15px;
+    background: $color-gray-3;
+    padding: 0 39px;
+  }
+
+  &__Circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btnArrow {
+    width: 16px;
+    height: 16px;
+  }
+}
