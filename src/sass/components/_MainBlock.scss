@@ -3,16 +3,19 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 400px;
-    grid-template-rows: minmax(22px, auto) 1fr;
+    grid-template-columns: minmax(320px, auto);
+    grid-template-rows: minmax(22px, auto) minmax(22px, auto) 1fr;
     column-gap: 46px;
+    row-gap: 46px;
   }
 
   &__cover {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 3;
+  }
+
+  &__coverImg {
+    max-width: 100%;
   }
 
   &__content {
@@ -37,5 +40,22 @@
 
   &__button {
     margin-top: 45px;
+  }
+}
+
+@media (min-width: 760px) {
+  .MainBlock {
+    &__wrapper {
+      grid-template-columns: 1fr 400px;
+      grid-template-rows: minmax(22px, auto) 1fr;
+      column-gap: 46px;
+    }
+
+    &__cover {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
   }
 }

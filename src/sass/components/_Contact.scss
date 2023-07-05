@@ -6,8 +6,11 @@
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &__title {
@@ -19,9 +22,11 @@
   &__form {
     display: flex;
     gap: 15px;
+    flex-direction: column;
   }
 
   &__divider {
+    display: none;
     height: 100%;
     min-height: 100px;
     width: 1px;
@@ -32,6 +37,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-direction: column;
   }
 
   &__socialTitle {
@@ -44,5 +50,29 @@
   &__socialIcons {
     display: flex;
     gap: 15px;
+  }
+}
+
+@media (min-width: 950px) {
+  .Contact {
+    &__wrapper {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    &__divider {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .Contact {
+    &__social,
+    &__form {
+      flex-direction: row;
+    }
   }
 }

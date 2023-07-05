@@ -7,10 +7,14 @@
     <title>Магазин оптики</title>
   </head>
   <body>
-    <!-- <section class="Header container">
+    <section class="Header container">
       <div class="Header__topBlock Header__topBlock_first">
+        <div class="Header__burger">
+          <img src="img/icons/burger.svg" alt="" />
+        </div>
+
         <div class="Header__logo">
-          <img src="img/logo.png" alt="Logo Shop" />
+          <a href="/"> <img src="img/logo.png" alt="Logo Shop" /></a>
         </div>
         <div class="Header__divider Header__divider_first"></div>
         <div class="Header__locations">
@@ -39,7 +43,7 @@
           </button>
         </div>
         <div class="Header__divider"></div>
-        <div class="Header__phnone">
+        <div class="Header__phone">
           <div class="Header__phoneNumber">
             <a href="tel:+78001111111"> +7 (800) 111-111-1 </a>
           </div>
@@ -75,25 +79,29 @@
         </div>
       </div>
     </section>
+
     <nav class="Navbar">
       <div class="Navbar__Menu container">
-        <ul class="Navbar__list">
-          <li class="Navbar__listItem Navbar__listItem_first">
-            <a href="#" class="Navbar__listItemLink">Текст текст</a>
-          </li>
-          <li class="Navbar__listItem">
-            <a href="#" class="Navbar__listItemLink">Текст текст текст</a>
-          </li>
-          <li class="Navbar__listItem">
-            <a href="#" class="Navbar__listItemLink">Текст текст</a>
-          </li>
-          <li class="Navbar__listItem">
-            <a href="#" class="Navbar__listItemLink">Текст текст</a>
-          </li>
-          <li class="Navbar__listItem Navbar__listItem_last">
-            <a href="#" class="Navbar__listItemLink">Текст и текст</a>
-          </li>
-        </ul>
+        <div class="Navbar__MenuList">
+          <ul class="Navbar__list">
+            <li class="Navbar__listItem Navbar__listItem_first">
+              <a href="#" class="Navbar__listItemLink">Текст текст</a>
+            </li>
+            <li class="Navbar__listItem">
+              <a href="#" class="Navbar__listItemLink">Текст текст текст</a>
+            </li>
+            <li class="Navbar__listItem">
+              <a href="#" class="Navbar__listItemLink">Текст текст</a>
+            </li>
+            <li class="Navbar__listItem">
+              <a href="#" class="Navbar__listItemLink">Текст текст</a>
+            </li>
+            <li class="Navbar__listItem Navbar__listItem_last">
+              <a href="#" class="Navbar__listItemLink">Текст и текст</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="Navbar__Search">
           <img
             src="img/icons/magnifying-glass.svg"
@@ -103,6 +111,7 @@
         </div>
       </div>
     </nav>
+
     <section class="MainBlock">
       <div class="MainBlock__wrapper container">
         <div class="BreadCrumbs">
@@ -144,10 +153,15 @@
         </div>
 
         <div class="MainBlock__cover">
-          <img src="img/doctor-woman.jpg" alt="Проверка зрения в городе  N" />
+          <img
+            src="img/doctor-woman.jpg"
+            alt="Проверка зрения в городе  N"
+            class="MainBlock__coverImg"
+          />
         </div>
       </div>
     </section>
+
     <section class="Advantages container">
       <h2 class="Title__subtitle Title_center">
         Заголовок заголовок заголовок
@@ -296,8 +310,12 @@
           </li>
         </ul>
       </div>
-      <div class="Content__img">
-        <img src="img/diagnostic.jpg" alt="Диагностика зрения" />
+      <div class="Content__cover">
+        <img
+          src="img/diagnostic.jpg"
+          alt="Диагностика зрения"
+          class="Content__img"
+        />
       </div>
     </section>
     <section class="QuestionBlock">
@@ -351,7 +369,7 @@
           текст текст текст текст текст текст текст текст текст.
         </div>
       </div>
-    </section> -->
+    </section>
     <section class="FAQ">
       <div class="FAQ__wrapper container">
         <div class="FAQ__content">
@@ -396,7 +414,7 @@
             <img
               src="img/icons/arrow-large.svg"
               alt="Записаться на проверку"
-              class="Advantages__btnArrow"
+              class="FAQ__btnArrow"
             />
           </div>
         </button>
@@ -443,52 +461,57 @@
     <footer class="Footer">
       <div class="Footer__wrapper container">
         <div class="Footer__contact">
-          <div class="Footer__logo">
-            <img src="img/logo.png" alt="Logo" />
+          <div>
+            <div class="Footer__logo">
+              <a href="/">
+                <img src="img/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <div class="Footer__ContactContent">
+              <div class="Footer__icon">
+                <img src="img/icons/phone-call.svg" alt="Телефон" />
+              </div>
+              <div class="Footer__ContactText">
+                <a href="tel:+78001111111" class="Footer__contactLink">
+                  +7 (800) 111-111-1
+                </a>
+              </div>
+              <div class="Footer__icon">
+                <img src="img/icons/at.svg" alt="Email" />
+              </div>
+              <div class="Footer__ContactText">
+                <a href="mailto:info@vimeo.ru" class="Footer__contactLink"
+                  >info@vimeo.ru</a
+                >
+              </div>
+              <div class="Footer__icon">
+                <img
+                  src="img/icons/questions-circular-button.svg"
+                  alt="Задать вопрос"
+                />
+              </div>
+              <div class="Footer__ContactText">
+                <a
+                  href="#"
+                  class="Footer__contactLink Footer__contactLink_underline"
+                >
+                  Задать вопрос
+                </a>
+              </div>
+              <div class="Footer__icon">
+                <img src="img/icons/speech-bubble.svg" alt="оставить отзыв" />
+              </div>
+              <div class="Footer__ContactText">
+                <a
+                  href="#"
+                  class="Footer__contactLink Footer__contactLink_underline"
+                >
+                  Оставить отзыв
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="Footer__ContactContent">
-            <div class="Footer__icon">
-              <img src="img/icons/phone-call.svg" alt="Телефон" />
-            </div>
-            <div class="Footer__ContactText">
-              <a href="tel:+78001111111" class="Footer__contactLink">
-                +7 (800) 111-111-1
-              </a>
-            </div>
-            <div class="Footer__icon">
-              <img src="img/icons/at.svg" alt="Email" />
-            </div>
-            <div class="Footer__ContactText">
-              <a href="mailto:info@vimeo.ru" class="Footer__contactLink"
-                >info@vimeo.ru</a
-              >
-            </div>
-            <div class="Footer__icon">
-              <img
-                src="img/icons/questions-circular-button.svg"
-                alt="Задать вопрос"
-              />
-            </div>
-            <div class="Footer__ContactText">
-              <a
-                href="#"
-                class="Footer__contactLink Footer__contactLink_underline"
-              >
-                Задать вопрос
-              </a>
-            </div>
-            <div class="Footer__icon">
-              <img src="img/icons/speech-bubble.svg" alt="оставить отзыв" />
-            </div>
-            <div class="Footer__ContactText">
-              <a
-                href="#"
-                class="Footer__contactLink Footer__contactLink_underline"
-              >
-                Оставить отзыв
-              </a>
-            </div>
-          </div>
+
           <div class="Footer__Description">
             текст текст текст текст текст текст текст текст текст текст текст
             текст текст
@@ -549,5 +572,6 @@
       </div>
     </section>
     <section class="BottomPage"></section>
+    <script src="js/openNavbar.js"></script>
   </body>
 </html>

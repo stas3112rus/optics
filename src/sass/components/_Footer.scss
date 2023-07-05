@@ -6,12 +6,18 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-direction: column;
   }
 
   &__contact {
-    width: 262px;
+    width: 100%;
     padding-right: 30px;
     border-right: 1px solid $color-gray-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   &__ContactContent {
@@ -41,19 +47,23 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    max-width: 300px;
   }
 
   &__Menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 50px;
   }
 
   &__MenuItem {
     display: flex;
+
     flex-direction: column;
     gap: 10px;
-    min-width: 180px;
+    min-width: 150px;
   }
 
   &__MenuItemTitle {
@@ -69,5 +79,18 @@
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 400;
+  }
+}
+
+@media (min-width: 1080px) {
+  .Footer {
+    &__wrapper {
+      flex-direction: row;
+    }
+
+    &__contact {
+      width: 262px;
+      flex-direction: column;
+    }
   }
 }
