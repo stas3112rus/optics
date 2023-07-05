@@ -1,0 +1,43 @@
+.QuestionBlock {
+  margin-top: 60px;
+  padding: 50px 0;
+  background: $color-gray-3;
+
+  &__carousel {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__carouselItem {
+    border-radius: 8px;
+    min-height: 331px;
+	width: 370px;
+    border: 1px solid $color-gray-4;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__carouselItemContent {
+    padding: 25px;
+  }
+
+  &__carouselItemTitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__carouselItemDescription {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__description {
+	margin-top: 20px;
+    color: $color-gray-2;
+    font-size: 16px;
+	line-height: 22px;
+  }
+}
