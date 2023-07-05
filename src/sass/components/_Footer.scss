@@ -1,0 +1,74 @@
+.Footer {
+  background: $color-gray-3;
+  padding: 40px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__contact {
+    width: 262px;
+    padding-right: 30px;
+    border-right: 1px solid $color-gray-4;
+  }
+
+  &__ContactContent {
+    border-bottom: 1px solid $color-gray-4;
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    row-gap: 10px;
+    column-gap: 14px;
+    padding-bottom: 20px;
+  }
+
+  &__contactLink,
+  &__contactLink:hover {
+    color: $color-gray-2;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__contactLink_underline {
+    text-decoration: underline;
+  }
+
+  &__Description {
+    margin-top: 20px;
+    color: $color-gray-2;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &__Menu {
+    display: flex;
+    justify-content: space-between;
+	width: 100%;
+  }
+
+  &__MenuItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 180px;
+  }
+
+  &__MenuItemTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  &__MenuItemLink,
+  &__MenuItemLink:hover {
+    color: $color-gray-2;
+    font-size: 14px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 400;
+    
+  }
+}
