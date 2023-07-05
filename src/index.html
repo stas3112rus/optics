@@ -31,7 +31,7 @@
       </div>
       <div class="Header__topBlock Header__topBlock_second">
         <div class="Header__button">
-          <button class="Buttons">
+          <button class="Buttons" data-fancybox data-src="#popup-sendForm">
             <div class="Header__CheckTable Buttons_inner">
               <div class="Header__CheckTableFirstRow">Ш Б</div>
               <div class="Header__CheckTableSecondRow">н м к</div>
@@ -146,7 +146,11 @@
           </div>
 
           <div class="MainBlock__button">
-            <button class="Buttons Buttons_capital">
+            <button
+              class="Buttons Buttons_capital"
+              data-fancybox
+              data-src="#popup-sendForm"
+            >
               Записаться на проверку
             </button>
           </div>
@@ -280,7 +284,11 @@
         </div>
       </div>
       <div class="Advantages__button">
-        <button class="Buttons Buttons_gradient Buttons_capital Buttons_large">
+        <button
+          class="Buttons Buttons_gradient Buttons_capital Buttons_large"
+          data-fancybox
+          data-src="#popup-sendForm"
+        >
           <span class="Advantages__buttonText">Записаться на проверку</span>
           <div class="Circles Circles_white Circles_medium">
             <img
@@ -419,7 +427,11 @@
       </div>
 
       <div class="FAQ__btn">
-        <button class="Buttons Buttons_gradient Buttons_capital Buttons_large">
+        <button
+          class="Buttons Buttons_gradient Buttons_capital Buttons_large"
+          data-fancybox
+          data-src="#popup-sendForm"
+        >
           <span class="Advantages__buttonText">Записаться на проверку</span>
           <div class="Circles Circles_white Circles_medium">
             <img
@@ -583,6 +595,61 @@
       </div>
     </section>
     <section class="BottomPage"></section>
+
+    <div id="popup-sendForm" class="Popup">
+      <h2>Оставьте заявку</h2>
+      <div class="Popup__wrapper">
+        <div class="Popup__description">
+          <div class="Popup__title">Оставьте заявку</div>
+          <div class="Popup__subtitle">Скоро с вами свяжется администратор</div>
+          <div class="Popup__policy">
+            Нажимая на кнопку «Отправить», Вы <br />
+            соглашаетесь с 
+            <a href="" class="Popup__link"> Политикой конфиденциальности </a>
+          </div>
+        </div>
+        <form action="" class="Popup__form">
+          <div class="Popup__formItem">
+            <label for="email" class="Popup__label">Ваш телефон</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="ivan@yandex.ru"
+              class="InputText"
+              required
+            />
+          </div>
+          <div class="Popup__formItem">
+            <label for="tel" class="Popup__label">Ваш номер телефона</label>
+            <input
+              id="phone"
+              type="tel"
+              name="tel"
+              pattern="\d{3}\-\d{3}\-\d{4}"
+              class="InputText"
+              data-mask="+7(999)999-99-99"
+              placeholder="+7(999)999-99-99"
+              required
+            />
+          </div>
+          <div class="Popup__formItem Popup__formItem_checkobox">
+            <input
+              id="submit"
+              type="checkbox"
+              name="submit"
+              class="InputCheckbox"
+              checked
+            />
+            <label for="submit" class="Popup__label"
+              >Я хочу получать информацию о новых акциях компании</label
+            >
+          </div>
+          <div class="Popup__button">
+            <button class="Buttons">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
