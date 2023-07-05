@@ -1,5 +1,6 @@
 .MainBlock {
   background-color: $color-gray-3;
+  overflow: hidden;
 
   &__wrapper {
     display: grid;
