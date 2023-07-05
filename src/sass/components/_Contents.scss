@@ -1,0 +1,17 @@
+.Content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 13px;
+
+  &__list {
+    margin-top: 30px;
+	padding-left: 19px;
+  }
+
+  &__ListItem {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
