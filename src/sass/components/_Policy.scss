@@ -1,0 +1,23 @@
+.Policy {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+  }
+
+  &__link,
+  &_link:hover {
+    color: $color-gray-2;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration-line: underline;
+  }
+
+  &__content {
+    color: $color-gray-2;
+    font-size: 14px;
+  }
+}
